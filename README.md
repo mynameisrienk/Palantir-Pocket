@@ -1,5 +1,7 @@
 # Palantír Pocket
 
+_**Note:** this is currently under heavy development!_
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -8,7 +10,7 @@
 
 ## Introduction
 
-[Palantír](http://mynameisrienk.com/?palantir) is a Chrome (desktop) extension to quickly open bookmarks, bookmarklets and apps. Using bookmarklets in Chrome for iOS (and to a lesser extend in iOS Safari) is quite cumbersome, to say the least. **Palantír Pocket** is a simple solution to implement bookmarklets on your iOS device!
+The original [Palantír](http://mynameisrienk.com/?palantir) is a Chrome extension to quickly open bookmarks, bookmarklets and apps. Using bookmarklets in iOS Chrome (and to a lesser extend in iOS Safari) is quite cumbersome, to say the least. **Palantír Pocket** will be a simple solution to implement bookmarklets on your iOS device!
 
 **Palantír Pocket** will launch an in-screen window with your preset bookmarks/bookmarklets. The bookmarks are imported from a json(p) file you will have to provide (since your bookmarks are not accessible using in-browser javascript).
 
