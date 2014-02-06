@@ -21,17 +21,15 @@ By using the power of custom URL schemes (see [this git repository](https://gith
 ## Setting Up
 
 
-`javascript:(function(){if(typeof%20palantirCallback=='function'){document.getElementById('palantir').style.display=%22block%22;}else{PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='http://mynameisrienk.github.io/palantirpocket/script.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();`
+	javascript:(function(){if(typeof%20palantirCallback%20!='function'){PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='//mynameisrienk.github.io/palantirpocket/script.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();
 
 … displayed as not url-encoded Javascript:
 
 	javascript:(function() {
-		if (typeof palantirCallback == 'function') { 
-		  document.getElementById('palantir').style.display="block";
-		} else {
+		if (typeof palantirCallback != 'function') { 
 			PP_SCRIPT = document.createElement('SCRIPT');
 			PP_SCRIPT.type = 'text/javascript';
-			PP_SCRIPT.src = 'http://mynameisrienk.github.io/palantirpocket/script.js';
+			PP_SCRIPT.src = '//mynameisrienk.github.io/palantirpocket/script.js';
 		document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);
 		}
 	})();
