@@ -5,7 +5,6 @@
 1. [Introduction](#introduction)
 1. [Setting Up](#setting-up)
 1. [Bookmarklet Ideas](#bookmarklet-ideas)
-	1. [Add feed to Boxcar 2](#add-feed-to-boxcar-2)
 
 ## Introduction
 
@@ -20,7 +19,7 @@ By using the power of custom URL schemes (see [this git repository](https://gith
 ## Setting Up
 
 
-`javascript:(function(){if(typeof%20palantirCallback=='function'){document.getElementById('palantir').style.display=%22block%22;}else{PP_FILE='http://localhost/palantirPocket.json';PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='http://localhost/palantirPocket.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();`
+`javascript:(function(){if(typeof%20palantirCallback=='function'){document.getElementById('palantir').style.display=%22block%22;}else{PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='http://mynameisrienk.github.io/palantirpocket/script.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();`
 
 … displayed as not url-encoded Javascript:
 
@@ -28,10 +27,9 @@ By using the power of custom URL schemes (see [this git repository](https://gith
 		if (typeof palantirCallback == 'function') { 
 		  document.getElementById('palantir').style.display="block";
 		} else {
-			PP_FILE   = 'http://localhost/palantirPocket.json';
 			PP_SCRIPT = document.createElement('SCRIPT');
 			PP_SCRIPT.type = 'text/javascript';
-			PP_SCRIPT.src = 'http://localhost/palantirPocket.js';
+			PP_SCRIPT.src = 'http://mynameisrienk.github.io/palantirpocket/script.js';
 		document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);
 		}
 	})();
@@ -55,9 +53,3 @@ Tweet your bookmarklet "URLs" to [@MyNameIsRienk](http://twitter.com/mynameisrie
 Open the current web page in Chrome for iOS and display a button to return to Safari (from [iosWorkflows](https://github.com/christopherdwhite/iosWorkflows/blob/master/_bookmarklets.md#open-in-chrome--return-to-safari)
 
     javascript:window.location='googlechrome-x-callback://x-callback-url/open/?url='+encodeURIComponent(location.href)+'&x-source=Safari&x-success='+encodeURIComponent(location.href);
-
-### Add feed to Boxcar 2
-
-Find the RSS/Atom feed of the open website and add it to the Boxcar 2 watch list.
-
-    javascript://
