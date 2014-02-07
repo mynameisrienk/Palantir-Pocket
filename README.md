@@ -2,8 +2,11 @@
 
 _**Note:** this is currently under heavy development!_
 
+<<<<<<< HEAD
 ---
 
+=======
+>>>>>>> 588f1cb1471e31989e6c74569aaf30d4298a3786
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -12,9 +15,12 @@ _**Note:** this is currently under heavy development!_
 	1. [Parameters](#parameters)
 	1. [The JSONP data file](#the-jsonp-data-file)
 1. [Bookmarklet Ideas](#bookmarklet-ideas)
+<<<<<<< HEAD
 	1. [Open in Chrome and return to Safari](#open-in-chrome-and-return-to-safari)
 
 ---
+=======
+>>>>>>> 588f1cb1471e31989e6c74569aaf30d4298a3786
 
 ## Introduction
 
@@ -30,13 +36,20 @@ By using the power of custom URL schemes (see [this git repository](https://gith
 
 Just create a bookmark with the following URL:
 
+<<<<<<< HEAD
 	javascript:(function(){if(typeof%20palantirCallback%20!='function'){PP_FILE='//mynameisrienk.github.io/palantirpocket/data.json';PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='//mynameisrienk.github.io/palantirpocket/script.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();
+=======
+	javascript:(function(){if(typeof%20palantirCallback%20!='function'){PP_SCRIPT=document.createElement('SCRIPT');PP_SCRIPT.type='text/javascript';PP_SCRIPT.src='//mynameisrienk.github.io/palantirpocket/script.js';document.getElementsByTagName('head')[0].appendChild(PP_SCRIPT);}})();
+>>>>>>> 588f1cb1471e31989e6c74569aaf30d4298a3786
 
 … displayed as not url-encoded Javascript:
 
 	javascript:(function() {
 		if (typeof palantirCallback != 'function') { 
+<<<<<<< HEAD
 			PP_FILE   = '//mynameisrienk.github.io/palantirpocket/data.json';
+=======
+>>>>>>> 588f1cb1471e31989e6c74569aaf30d4298a3786
 			PP_SCRIPT = document.createElement('SCRIPT');
 			PP_SCRIPT.type = 'text/javascript';
 			PP_SCRIPT.src = '//mynameisrienk.github.io/palantirpocket/script.js';
