@@ -13,6 +13,7 @@ _**Note:** this is currently under heavy development!_
 	1. [The JSONP data file](#the-jsonp-data-file)
 1. [Bookmarklet Ideas](#bookmarklet-ideas)
 	1. [Open in Chrome and return to Safari](#open-in-chrome-and-return-to-safari)
+1. [Known Problems](#known-problems)
 
 ## Introduction
 
@@ -91,5 +92,11 @@ Tweet your bookmarklet "URLs" to [@MyNameIsRienk](http://twitter.com/mynameisrie
 Open the current web page in Chrome for iOS and display a button to return to Safari (from [iosWorkflows](https://github.com/christopherdwhite/iosWorkflows/blob/master/_bookmarklets.md#open-in-chrome--return-to-safari)
 
     javascript:window.location='googlechrome-x-callback://x-callback-url/open/?url='+encodeURIComponent(location.href)+'&x-source=Safari&x-success='+encodeURIComponent(location.href);
+
+[↩ Table of Contents](#table-of-contents)
+
+## Known Problems
+
+* The script doesn't always load due to Content Security Policy directive violations. AFAIK, this cannot be solved because it is a "server side" problem.
 
 [↩ Table of Contents](#table-of-contents)
